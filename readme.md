@@ -12,4 +12,4 @@
 
 6. SELECT \* FROM `degrees` WHERE `name` LIKE 'corso di laurea magistrale%';
 
-7.
+7. SELECT COUNT(\*) FROM `departments`;
