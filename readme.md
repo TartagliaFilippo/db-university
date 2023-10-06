@@ -1,17 +1,21 @@
-### SOLUZIONI
+# EX QUERY SELECT
 
-1. SELECT \* FROM `students` WHERE `date_of_birth` LIKE '1990-%'
+### QUERYES:
 
-2. SELECT \* FROM `courses` WHERE `cfu` > 10
+```sql
+1. SELECT * FROM `students` WHERE `date_of_birth` LIKE '1990-%'
 
-3. SELECT \* FROM `students` WHERE `date_of_birth` <= '1993-10-06'
+2. SELECT * FROM `courses` WHERE `cfu` > 10
 
-4. SELECT \* FROM `courses` WHERE `year` = '1' AND `period` = 'I semestre';
+3. SELECT * FROM `students` WHERE `date_of_birth` <= '1993-10-06'
 
-5. SELECT \* FROM `exams` WHERE `date` > '2020-06-20' AND `hour` > '14:00:00';
+4. SELECT * FROM `courses` WHERE `year` = '1' AND `period` = 'I semestre'
 
-6. SELECT \* FROM `degrees` WHERE `name` LIKE 'corso di laurea magistrale%';
+5. SELECT * FROM `exams` WHERE `date` > '2020-06-20' AND `hour` > '14:00:00'
 
-7. SELECT COUNT(\*) FROM `departments`;
+6. SELECT * FROM `degrees` WHERE `name` LIKE 'corso di laurea magistrale%'
 
-8. SELECT COUNT(\*) FROM `teachers` WHERE `phone` IS NULL;
+7. SELECT COUNT(*) FROM `departments`
+
+8. SELECT COUNT(*) FROM `teachers` WHERE `phone` IS NULL
+```
