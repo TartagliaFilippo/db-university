@@ -52,3 +52,11 @@ SELECT COUNT(*) FROM `departments`
 ```sql
 SELECT COUNT(*) FROM `teachers` WHERE `phone` IS NULL
 ```
+
+### QUERIES GROUP BY
+
+1. Contare quanti iscritti ci sono stati ogni anno
+
+```sql
+SELECT YEAR(`enrolment_date`) "anno_iscrizione", COUNT(*) "numero_studenti" FROM `students` GROUP BY YEAR(`enrolment_date`);
+```
