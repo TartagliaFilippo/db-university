@@ -114,7 +114,7 @@ SELECT `degrees`.`name` "corso_di_laurea", `degrees`.`level`, `degrees`.`address
 6. Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
 
 ```sql
-
+SELECT DISTINCT `teachers`.`name` "nome_insegnante", `teachers`.`surname` "cognome_insegnante", `departments`.`name` "nome_dipartimento" FROM `teachers` JOIN `course_teacher`ON `course_teacher`.`teacher_id` = `teachers`.`id` JOIN `courses` ON `courses`.`id` = `course_teacher`.`course_id` JOIN `degrees` ON `degrees`.`id` = `courses`.`degree_id` JOIN `departments` ON `departments`.`id` = `degrees`.`department_id` WHERE `departments`.`name` = "Dipartimento di Matematica";
 ```
 
 7. BONUS: Selezionare per ogni studente il numero di tentativi sostenuti
